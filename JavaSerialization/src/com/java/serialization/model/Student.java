@@ -11,16 +11,16 @@ public class Student implements Serializable {
     transient static String collegeName = "India College";
 
     //final variables are injected as value in compile time, so it is serialized
-    final int age = 23;
+   private final int age = 23;
 
     //Even if it is transient, final values are serialized.
     // Bcoz final variable are replaced with their value at compile time which won't change at runtime,
     //so jvm insert its value in Serialized Object state.
-    transient final String courseField = "B.TECH";
+    private transient final String courseField = "B.TECH";
 
     //These will be serialized as they are part ob Object state.
-    int id = 101;
-    String name = "Harry";
+    private int id = 101;
+    private String name = "Harry";
 
     //transient variable are not serialized. JVM will insert default value during serialization.
     transient String password = "password";
