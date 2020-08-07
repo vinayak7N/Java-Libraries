@@ -12,6 +12,7 @@ public class DeSerializationExample2 {
 
         ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream("Student.ser"));
         Student s2 = (Student) objectInputStream.readObject();
+        System.out.println("De-Serialized Student Object");
         System.out.println(s2);
     }
 }

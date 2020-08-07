@@ -15,5 +15,6 @@ public class SerializationExample1 {
         Student s1 = new Student();
         ObjectOutputStream out = new ObjectOutputStream(new FileOutputStream("Student.ser"));
         out.writeObject(s1);
+        System.out.println("Student Object is serialized");
     }
 }
