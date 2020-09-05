@@ -10,29 +10,30 @@ In this article concepts regarding internal architecture of Java Virtual Machine
 * JAVA: 1.8
 
 ## Table of Contents
-* [Different Modules of JVM](#different-modules)
-* [Class Loader Subsystem](#classloader-subsystem)
-  * [Linking](#linking)
-  * [Loading](#loading)
-  * [Initialization](#initialization)
+* [Different Modules of JVM](#different-modules-of-jvm-are)
+* [Class Loader Subsystem](#class-loader-subsystem)
+  * [Loading](#1-loading)
+  * [Linking](#2-linking)
+  * [Initialization](#3-initialization)
 * [Types of Class loaders](#types-of-class-loaders)
-* [Bootstrap Class Loader](#bootstrap-class-loader)
-* [Extension Class Loader](#extension-class-loader)
-* [Application Class Loader](#application-class-loader)
-* [How Class Loader work](#how-class-loader-works)
-* [Need for Customised Class loader](#customised-class-loader)
-* [Various Memory Areas inside JVM](#memory-areas-jvm)
-  * [Method Area](#method-area)
-  * [Heap Area](#heap-area)
-  * [Stack Area](#stack-area)
+* [Bootstrap Class Loader](#1-bootstrap-class-loader--primordial-class-loader)
+* [Extension Class Loader](#2-extension-class-loader)
+* [Application Class Loader](#3-application-class-loader--system-class-loader)
+* [How Class Loader work](#how-class-loader-work)
+* [Need for Customised Class loader](#need-for-customised-class-loader)
+* [Various Memory Areas inside JVM](#various-memory-areas-inside-jvm)
+  * [Method Area](#1-method-area)
+  * [Heap Area](#2-heap-area)
+  * [Stack Area](#3-stack-area)
     * [Stack Frame Structre](#stack-frame-structure)
-  * [PC Registers](#pc-registers)
-  * [Native Method Stacks](#native-method-stacks)
+  * [PC Registers](#4-pc-registersprogram-counter-registers)
+  * [Native Method Stacks](#5-native-method-stacks)
 * [Execution Engine](#execution-engine)
-  * [Interpreter](#interpreter)
-  * [JIT Compiler](#jit-compiler)
-* [Java Native Interface](#java-native-interface)
+  * [Interpreter](#1-interpreter)
+  * [JIT Compiler](#2-jit-compiler)
+* [Java Native Interface](#java-native-interfacejni-)
 * [Class File Structure](#class-file-structure)
+* [Programs](#programs)
 
 
 ### Different modules of JVM are:
@@ -273,3 +274,15 @@ JVM will store this structure in the method area.
 
 ##### javap -verbose Test.class
 It helps to provide info regarding class structure attributes.
+
+### Programs
+
+
+* [ClassLoadingProgram](/JVMInternals/src/ClassLoadingProgram.java)
+Retrieved Class type of object representing student and stored in Heap Area.
+
+* [ClassLoadingProgram2](/JVMInternals/src/ClassLoadingProgram2.java)
+This program demonstrates that only one Class class type object is created for a particular object irrespective of a user creating multiple instance of a class.
+
+* [HeapMemoryStatisticsProgram](/JVMInternals/src/HeapMemoryStatisticsProgram.java)
+This program shows how we can fetch/update heap memory size.
