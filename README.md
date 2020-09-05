@@ -4,7 +4,7 @@ Java important concepts and libraries
 ## JVM Internals
 In this article concepts regarding internal architecture of Java Virtual Machine is described.
 
-![JVM Internal Architecture](/Java-Libraries/images/jvm-internal.jpg "JVM Internal Architecture")
+![JVM Internal Architecture](/images/jvm-internal.jpg "JVM Internal Architecture")
 
 ## Technology
 * JAVA: 1.8
@@ -88,7 +88,7 @@ For above Test class, the names of child classes used will be stored in the cons
 In this phase static variables are initialized with their original values and static blocks are also executed from parent to child and from top to bottom.
 While loading or linking or initializing if there is any error occur then error - java.lang.LinkingError is thrown and VerifyError is the child class of LinkingError.
 
-![Class Loading Process](/Java-Libraries/images/class-loading-process.jpg "Class Loading Process")
+![Class Loading Process](/images/class-loading-process.jpg "Class Loading Process")
 
 #### Types of Class Loaders:
 	
@@ -206,7 +206,7 @@ For this program following memory areas will be allocated:
         }
       }
 
-![Object Storage](/Java-Libraries/images/object-internal-storage.jpg "Object Storage")
+![Object Storage](/images/object-internal-storage.jpg "Object Storage")
 
 A Java application can communicate using Runtime object and Runtime is a singleton class.
 So to get runtime instance we can call:
