@@ -1,5 +1,3 @@
-# Java-Libraries
-Java important concepts and libraries
 
 ## JVM Internals
 In this article concepts regarding internal architecture of Java Virtual Machine is described.
