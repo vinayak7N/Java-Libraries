@@ -2,6 +2,12 @@ public class HeapMemoryStatisticsProgram {
 
     static final long MB = 1024 * 1024;
 
+    /* We can increase/decrease the heap size by passing arguments during run as;
+     *   java -Xmx512m --- will set Heap size as 512 MB in maxMemory()
+     *   java -Xms64m --- will set minimum hea size as 64 MB in totalMemory()
+     *   java -Xmx512m -Xms64m will set both max and min heap size
+     * */
+
     public static void main(String[] args) {
 
         /*To communicate with JVM we need Runtime object
