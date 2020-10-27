@@ -13,7 +13,7 @@ import java.nio.file.Paths;
  *
  */
 
-public class NioForChannelBasedIOSeconWay {
+public class NioForChannelBasedIOSecondWay {
 
 	/*
 	 * This program demonstrate how to read a file using Channel based NIO and map
