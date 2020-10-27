@@ -1,0 +1,9 @@
+An important use of NIO is to access a file via a channel and buffers. The following sections
+demonstrate some techniques that use a channel to read from and write to a file.
+There are several ways to read data from a file using a channel. Perhaps the most common
+way is to manually allocate a buffer and then perform an explicit read operation that loads
+that buffer with data from the file.
+.
+.
+.
+Thank You!
